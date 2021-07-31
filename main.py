@@ -32,7 +32,7 @@ class Snake:
         self.vector = (1, 0)
         self.prev_vector = (1, 0)
         self.canvas = p_canvas
-        self.tail_coordinates = [[x, y]]
+        self.tail_coordinates = [[None, None]]
         self.rect = p_canvas.create_rectangle(self.x, self.y, self.x + size, self.y + size, fill='red')
         self.coin = Coin(p_canvas,
                          int(self.canvas["width"]),
